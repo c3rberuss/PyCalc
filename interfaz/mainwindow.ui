@@ -6,12 +6,12 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>418</width>
-    <height>515</height>
+    <width>491</width>
+    <height>519</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>PyCalc</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QWidget" name="verticalLayoutWidget">
@@ -19,103 +19,557 @@
      <rect>
       <x>10</x>
       <y>10</y>
-      <width>401</width>
+      <width>471</width>
       <height>501</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
      <item>
-      <widget class="QPlainTextEdit" name="plainTextEdit">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>0</width>
-         <height>100</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>16777215</width>
-         <height>100</height>
-        </size>
-       </property>
-       <property name="baseSize">
-        <size>
-         <width>0</width>
-         <height>0</height>
-        </size>
+      <widget class="QTextEdit" name="txtResult">
+       <property name="readOnly">
+        <bool>true</bool>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QLineEdit" name="lineEdit"/>
+      <widget class="QLineEdit" name="txtOperando">
+       <property name="styleSheet">
+        <string notr="true">text-align: right;</string>
+       </property>
+      </widget>
      </item>
      <item>
       <layout class="QGridLayout" name="gridLayout_2">
+       <property name="sizeConstraint">
+        <enum>QLayout::SetDefaultConstraint</enum>
+       </property>
        <item row="0" column="0">
-        <widget class="QPushButton" name="pushButton">
+        <widget class="QPushButton" name="btnSqrt">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
            <horstretch>0</horstretch>
            <verstretch>0</verstretch>
           </sizepolicy>
          </property>
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>45</height>
+          </size>
+         </property>
          <property name="text">
-          <string>PushButton</string>
+          <string>√</string>
          </property>
         </widget>
        </item>
        <item row="0" column="1">
-        <widget class="QPushButton" name="pushButton_2">
+        <widget class="QPushButton" name="btnPow">
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>45</height>
+          </size>
+         </property>
          <property name="text">
-          <string>PushButton</string>
+          <string>x^y</string>
          </property>
         </widget>
        </item>
        <item row="0" column="3">
-        <widget class="QPushButton" name="pushButton_4">
+        <widget class="QPushButton" name="btnMod">
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>45</height>
+          </size>
+         </property>
          <property name="text">
-          <string>PushButton</string>
+          <string>mod</string>
          </property>
         </widget>
        </item>
        <item row="0" column="2">
-        <widget class="QPushButton" name="pushButton_3">
+        <widget class="QPushButton" name="btnNotacion">
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>45</height>
+          </size>
+         </property>
          <property name="text">
-          <string>PushButton</string>
+          <string>10^x</string>
          </property>
         </widget>
        </item>
-       <item row="1" column="0">
-        <widget class="QPushButton" name="pushButton_5">
+       <item row="2" column="6">
+        <widget class="QPushButton" name="btnSinh">
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>45</height>
+          </size>
+         </property>
          <property name="text">
-          <string>PushButton</string>
+          <string>sinh</string>
          </property>
         </widget>
        </item>
        <item row="1" column="1">
-        <widget class="QPushButton" name="pushButton_6">
+        <widget class="QPushButton" name="btnOcho">
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>45</height>
+          </size>
+         </property>
          <property name="text">
-          <string>PushButton</string>
+          <string>8</string>
          </property>
         </widget>
        </item>
-       <item row="1" column="2">
-        <widget class="QPushButton" name="pushButton_7">
+       <item row="4" column="1">
+        <widget class="QPushButton" name="btnPunto">
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>45</height>
+          </size>
+         </property>
          <property name="text">
-          <string>PushButton</string>
+          <string>.</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QPushButton" name="btnDos">
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>45</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>2</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="4">
+        <widget class="QPushButton" name="btnIgual">
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>45</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(0, 85, 255);
+color: white;</string>
+         </property>
+         <property name="text">
+          <string>=</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QPushButton" name="btnSiete">
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>45</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>7</string>
          </property>
         </widget>
        </item>
        <item row="1" column="3">
-        <widget class="QPushButton" name="pushButton_8">
+        <widget class="QPushButton" name="btnEntre">
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>45</height>
+          </size>
+         </property>
          <property name="text">
-          <string>PushButton</string>
+          <string>÷</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="2">
+        <widget class="QPushButton" name="btnTres">
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>45</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>3</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="5">
+        <widget class="QPushButton" name="btnTan">
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>45</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>tan</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="6">
+        <widget class="QPushButton" name="btnFactorial">
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>45</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>x!</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="6">
+        <widget class="QPushButton" name="btnTanh">
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>45</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>tanh</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QPushButton" name="btnUno">
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>45</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>1</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QPushButton" name="btnCuatro">
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>45</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>4</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QPushButton" name="btnNueve">
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>45</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>9</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="5">
+        <widget class="QPushButton" name="btnAsin">
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>45</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>asin</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QPushButton" name="btnCinco">
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>45</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>5</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="7">
+        <widget class="QPushButton" name="btnLog">
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>45</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>log</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="2">
+        <widget class="QPushButton" name="btnParentesis">
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>45</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>( )</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="4">
+        <widget class="QPushButton" name="btnFactorizar">
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>45</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>fact</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="6">
+        <widget class="QPushButton" name="btnAtan">
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>45</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>atan</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="5">
+        <widget class="QPushButton" name="btnCos">
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>45</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>cos</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="4">
+        <widget class="QPushButton" name="btnPi">
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>45</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>π</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="4">
+        <widget class="QPushButton" name="btnSimplificar">
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>45</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>simp</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="4">
+        <widget class="QPushButton" name="btnExp">
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>45</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>e^x</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="6">
+        <widget class="QPushButton" name="btnCosh">
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>45</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>cosh</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="5">
+        <widget class="QPushButton" name="btnSin">
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>45</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>sin</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="3">
+        <widget class="QPushButton" name="btnMenos">
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>45</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>-</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QPushButton" name="btnSeis">
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>45</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>6</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QPushButton" name="btnCero">
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>45</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>0</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="5">
+        <widget class="QPushButton" name="btnAcos">
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>45</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>acos</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="3">
+        <widget class="QPushButton" name="btnPor">
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>45</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>x</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="7">
+        <widget class="QPushButton" name="btnLn">
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>45</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>ln</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="7">
+        <widget class="QPushButton" name="btnAbs">
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>45</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>|x|</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="3">
+        <widget class="QPushButton" name="btnMas">
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>45</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>+</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="7">
+        <widget class="QPushButton" name="btnDerivar">
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>45</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>d/dx</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="7">
+        <widget class="QPushButton" name="btnIntegrar">
+         <property name="maximumSize">
+          <size>
+           <width>54</width>
+           <height>45</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>∫</string>
          </property>
         </widget>
        </item>
@@ -125,6 +579,50 @@
    </widget>
   </widget>
  </widget>
+ <tabstops>
+  <tabstop>txtOperando</tabstop>
+  <tabstop>btnIgual</tabstop>
+  <tabstop>btnPow</tabstop>
+  <tabstop>btnNotacion</tabstop>
+  <tabstop>btnMod</tabstop>
+  <tabstop>btnSiete</tabstop>
+  <tabstop>btnOcho</tabstop>
+  <tabstop>btnNueve</tabstop>
+  <tabstop>btnEntre</tabstop>
+  <tabstop>btnCuatro</tabstop>
+  <tabstop>btnUno</tabstop>
+  <tabstop>btnCero</tabstop>
+  <tabstop>btnCinco</tabstop>
+  <tabstop>btnDos</tabstop>
+  <tabstop>btnPunto</tabstop>
+  <tabstop>btnSeis</tabstop>
+  <tabstop>btnTres</tabstop>
+  <tabstop>btnPor</tabstop>
+  <tabstop>btnMenos</tabstop>
+  <tabstop>btnMas</tabstop>
+  <tabstop>btnParentesis</tabstop>
+  <tabstop>btnSimplificar</tabstop>
+  <tabstop>btnSqrt</tabstop>
+  <tabstop>btnPi</tabstop>
+  <tabstop>btnExp</tabstop>
+  <tabstop>btnFactorizar</tabstop>
+  <tabstop>btnCos</tabstop>
+  <tabstop>btnSin</tabstop>
+  <tabstop>btnTan</tabstop>
+  <tabstop>btnAcos</tabstop>
+  <tabstop>btnAsin</tabstop>
+  <tabstop>btnAtan</tabstop>
+  <tabstop>btnCosh</tabstop>
+  <tabstop>btnSinh</tabstop>
+  <tabstop>btnTanh</tabstop>
+  <tabstop>btnFactorial</tabstop>
+  <tabstop>btnAbs</tabstop>
+  <tabstop>btnLn</tabstop>
+  <tabstop>btnLog</tabstop>
+  <tabstop>btnDerivar</tabstop>
+  <tabstop>btnIntegrar</tabstop>
+  <tabstop>txtResult</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>

@@ -11,9 +11,7 @@ class main(QMainWindow):
 
     def __init__(self):
         QMainWindow.__init__(self)
-
         uic.loadUi('interfaz/mainwindow.ui', self)
-
 
 main = main()
 main.show()
