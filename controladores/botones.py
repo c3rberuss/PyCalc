@@ -2,125 +2,125 @@ class Acciones():
 
 
     def add_n0(self):
-        self.txtOperando.insert("0")
+        self.grafica.txtOperando.insert("0")
     
     def add_n1(self):
-        self.txtOperando.insert("1")
+        self.grafica.txtOperando.insert("1")
 
     def add_n2(self):
-        self.txtOperando.insert("2")
+        self.grafica.txtOperando.insert("2")
 
     def add_n3(self):
-        self.txtOperando.insert("3")
+        self.grafica.txtOperando.insert("3")
 
     def add_n4(self):
-        self.txtOperando.insert("4")
+        self.grafica.txtOperando.insert("4")
 
     def add_n5(self):
-        self.txtOperando.insert("5")
+        self.grafica.txtOperando.insert("5")
     
     def add_n6(self):
-        self.txtOperando.insert("6")
+        self.grafica.txtOperando.insert("6")
 
     def add_n7(self):
-        self.txtOperando.insert("7")
+        self.grafica.txtOperando.insert("7")
 
     def add_n8(self):
-        self.txtOperando.insert("8")
+        self.grafica.txtOperando.insert("8")
 
     def add_n9(self):
-        self.txtOperando.insert("9")
+        self.grafica.txtOperando.insert("9")
 
     
     def add_raiz(self):
         
-        self.txtOperando.insert("sqrt(  )")
+        self.grafica.txtOperando.insert("sqrt( x )")
   
     def add_potencia(self):
-        self.txtOperando.insert("Pow(  )")
+        self.grafica.txtOperando.insert("Pow( x, y )")
        
     def add_notacion(self):
-        self.txtOperando.insert("1e")
+        self.grafica.txtOperando.insert("(1eX)")
 
     def add_modulo(self):
-        self.txtOperando.insert(" mod ")
+        self.grafica.txtOperando.insert("%")
 
     def add_simplificar(self):
-        self.txtOperando.insert("simplify(  )")
+        self.grafica.txtOperando.insert("simplify(  )")
     
     def add_cos(self):
-        self.txtOperando.insert("cos(  )")
+        self.grafica.txtOperando.insert("cos(  )")
     
     def add_atan(self):
-        self.txtOperando.insert("atan(  )")
+        self.grafica.txtOperando.insert("atan(  )")
 
     def add_abs(self):
-        self.txtOperando.insert("abs(  )")
+        self.grafica.txtOperando.insert("abs(  )")
 
     def add_entre(self):
-        self.txtOperando.insert(" / ")
+        self.grafica.txtOperando.insert(" / ")
 
     def add_factorizar(self):
-        self.txtOperando.insert("factor(  )")
+        self.grafica.txtOperando.insert("factor(  )")
 
     
     def add_sin(self):
-        self.txtOperando.insert("sin(  )")
+        self.grafica.txtOperando.insert("sin(  )")
     
     def add_cosh(self):
-        self.txtOperando.insert("cosh(  )")
+        self.grafica.txtOperando.insert("cosh(  )")
        
     def add_ln(self):
-        self.txtOperando.insert("ln(  )")
+        self.grafica.txtOperando.insert("ln(  )")
 
     def add_por(self):
-        self.txtOperando.insert(" * ")
+        self.grafica.txtOperando.insert(" * ")
 
     def add_exp(self):
-        self.txtOperando.insert("exp(  )")
+        self.grafica.txtOperando.insert("exp(  )")
     
     def add_tan(self):
-        self.txtOperando.insert("tan(  )")
+        self.grafica.txtOperando.insert("tan(  )")
     
     def add_sinh(self):
-        self.txtOperando.insert("sinh(  )")
+        self.grafica.txtOperando.insert("sinh(  )")
 
     def add_log(self):
-        self.txtOperando.insert("log(  )")
+        self.grafica.txtOperando.insert("log(  )")
 
     def add_menos(self):
-        self.txtOperando.insert(" - ")
+        self.grafica.txtOperando.insert(" - ")
 
     def add_pi(self):
-        self.txtOperando.insert(" pi ")
+        self.grafica.txtOperando.insert(" pi ")
 
     def add_acos(self):
-        self.txtOperando.insert("acos(  )")
+        self.grafica.txtOperando.insert("acos(  )")
     
     def add_tanh(self):
-        self.txtOperando.insert("tanh(  )")
+        self.grafica.txtOperando.insert("tanh(  )")
 
     def add_derivada(self):
-        self.txtOperando.insert("derivate(  )")
+        self.grafica.txtOperando.insert("derivate( func , var )")
 
     def add_punto(self):
-        self.txtOperando.insert(".")
+        self.grafica.txtOperando.insert(".")
 
     def add_parentesis(self):
-        self.txtOperando.insert("(  )")
+        self.grafica.txtOperando.insert("(  )")
 
     
     def add_mas(self):
-        self.txtOperando.insert(" + ")
+        self.grafica.txtOperando.insert(" + ")
 
     def add_asin(self):
-        self.txtOperando.insert("asin(  )")
+        self.grafica.txtOperando.insert("asin(  )")
 
     def add_factorial(self):
-        self.txtOperando.insert("factorial(  )")
+        self.grafica.txtOperando.insert("factorial(  )")
 
     def add_integral(self):
-        self.txtOperando.insert("integrate(  )")
+        self.grafica.txtOperando.insert("integrate( func , var )")
 
 
     """def add_n0(self):
